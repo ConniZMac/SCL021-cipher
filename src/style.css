@@ -1,0 +1,143 @@
+body{
+  background: url("https://www.xtrafondos.com/wallpapers/resized/figuras-geometricas-de-colores-abstractas-5859.jpg?s=large"); 
+  position:relative;
+  bottom:50px;
+
+}
+fieldset{
+  background:linear-gradient(to bottom, #ebb153  5%, #80b5ea 100%);
+  position:relative;
+  left:550px;
+  top:140px;
+  width:400px;
+  height:500px;
+	border-radius:6px;
+	border:0.5px none #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  position:relative;
+	border:none;
+  margin:0px;
+  opacity:0.95;       
+  border:solid;
+}
+#mensaje{
+  position:relative;
+  left:100px;
+  top:60px;
+
+
+}
+#desplazamiento{
+  position:relative;
+  left:100px;
+  top:10px;
+  background:linear-gradient(to bottom, #d2eb53  5%, #80b5ea 100%);
+  cursor:pointer;
+  border:1px solid grey;
+  font-size:15px;
+  padding:5px 20px;
+
+}
+#mensaje2{
+  position:relative;
+  left:100px;
+  top:60px;
+
+
+}
+#cifrar{
+  position:relative;
+  left:100px;
+  top:7px;
+  border-radius:2px;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(to bottom, #d2eb53  5%, #80b5ea 100%);
+  background-color:#bddbfa;
+  color:white;
+  font-family: sans-serif;
+  font-size:15px;
+  padding:12px 20px;
+
+
+}
+#descifrar{
+  position:relative;
+  left:200px;
+  top:7px;
+  border-radius:2px;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(to bottom, #d2eb53  5%, #80b5ea 100%);
+  background-color:#bddbfa;
+  color:white;
+  font-family: sans-serif;
+  font-size:15px;
+  padding:12px 20px;
+}
+label{
+  font-family:'Lucida Sans';
+  color:black;
+  transform:scale(2.5);
+  position:relative;
+  
+}
+
+
+
+
+textarea{
+  background:transparent;
+  outline:none;
+  border-radius:5px;
+  text-align:center;
+  transform:scale(1.5);
+  margin-bottom:70px;
+  position:relative;
+  top:40px;
+  cursor:pointer;
+}
+
+
+
+
+#container-1{
+  background:linear-gradient(to bottom, #ebb153  5%, #80b5ea 100%);
+  background-color:#bddbfa;
+  border-radius: 10px;
+  padding:30px 60px;
+  width:400px;
+  height:50px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  transform:translate(580px,100px);
+  font-family: 'Lucida Sans'; 
+  position:relative;
+  right:80px
+}
+
+#container-1, #container-2{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#titulo{
+  position:relative;
+  left:120px;
+}
+.visible{
+  display:block;
+  width:170px;
+  height:40px
+}
+.invisible{
+  display:none
+}
+
+  
+  
+  

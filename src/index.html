@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cifrado César</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+  <div id = 'container-1'>
+    <h1>Notas secretas:</h1>
+  </div>
+  <fieldset>
+    <h3>MENSAJE:</h3>
+    <label><textarea type="text" id="mensaje" placeholder="Tú mensaje secreto aqui..."></textarea></label>
+    <h3>DESPLAZAMIENTO:</h3>
+    <p><input type="number" id="desplazamiento" size="4"/></p>
+    <p><button type="button" id="cifrar">Cifrar</button>     
+    <button type="button" id="descifrar">Descifrar</button> </p>    
+    <h3>MENSAJE CIFRADO/DESCIFRADO:</h3>
+    <label><textarea type="text" id="mensaje2"placeholder="Tú mensaje codificado..." ></textarea></label>
+  </fieldset>
+   <script src="index.js" style=text-align:center>
+    </script>
+      
   </body>
-</html>
+  </html>
+  
