@@ -1,64 +1,95 @@
-//import cipher from './cipher.js';
-
-//console.log(cipher);
+import cipher from "./cipher.js";
 
 window.addEventListener("load",inicio,true);
 
 function inicio(){
     document.getElementById("mensaje").addEventListener("keyup", function(){
         this.value = this.value.toUpperCase();
-        
-    }, true);
+    }, true);//que todo valor de mayuscula
     
     document.getElementById("cifrar").addEventListener("click",function(){  
         let texto = document.getElementById("mensaje").value;
         let desplazamiento = document.getElementById("desplazamiento").value;               
-        document.getElementById("mensaje2").value = cifrar2(texto, desplazamiento);
-    },true);
+        document.getElementById("mensaje2").value = cipher.encode(desplazamiento,texto);
+    },true);//
     document.getElementById("descifrar").addEventListener("click",function(){  
         let texto = document.getElementById("mensaje").value;
         let desplazamiento = document.getElementById("desplazamiento").value;                               
-        document.getElementById("mensaje2").value = descifrar(texto, desplazamiento);
-    },true);
+        document.getElementById("mensaje2").value = cipher.decode(desplazamiento,texto);
+    },true);//
 }
-function cifrar(texto, desplazamiento) {
-    if (!texto) 
-        return ''; 
-    const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+
+
+
+
+
+//console.log(cipher);
+//---------------------------------------------------------------
+//import cipher from './cipher.js';
+
+//console.log(cipher);
+
+//window.addEventListener("load",inicio,true);
+
+//function inicio(){
+    //document.getElementById("mensaje").addEventListener("keyup", function(){
+        //this.value = this.value.toUpperCase();
+        
+    //}, true);
     
-    desplazamiento = (desplazamiento % 26 + 26) % 26; 
-    return texto.replace(/[A-Z]/ig, c => letras[(letras.indexOf(c) + desplazamiento) % 26]);
-  }
+    //document.getElementById("cifrar").addEventListener("click",function(){  
+        //let texto = document.getElementById("mensaje").value;
+        //let desplazamiento = document.getElementById("desplazamiento").value;               
+        //document.getElementById("mensaje2").value = cifrar2(texto, desplazamiento);
+    //},true);
+    //document.getElementById("descifrar").addEventListener("click",function(){  
+        //let texto = document.getElementById("mensaje").value;
+        //let desplazamiento = document.getElementById("desplazamiento").value;                               
+        //document.getElementById("mensaje2").value = descifrar(texto, desplazamiento);
+    //},true);
+//}
+//console.log(cipher);
+//function cifrar(texto, desplazamiento) {
+    //if (!texto) 
+        //return ''; 
+    //const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    
+    //desplazamiento = (desplazamiento % 26 + 26) % 26; 
+    //return texto.replace(/[A-Z]/ig, c => letras[(letras.indexOf(c) + desplazamiento) % 26]);
+  //}
   
   
-  function descifrar(texto, desplazamiento) {
-    if (!texto) 
-        return ''; 
-    const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    desplazamiento = (desplazamiento % 26 - 26) % 26; 
-    return texto.replace(/[A-Z]/ig, c => letras[(letras.indexOf(c) - desplazamiento) % 26]);
-  }
+  //function descifrar(texto, desplazamiento) {
+    //if (!texto) 
+        //return ''; 
+    //const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    //desplazamiento = (desplazamiento % 26 - 26) % 26; 
+    //return texto.replace(/[A-Z]/ig, c => letras[(letras.indexOf(c) - desplazamiento) % 26]);
+  //}
   
-  function cifrar2(texto, desplazamiento) {
-    let resultado='';
-    let letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  //function cifrar2(texto, desplazamiento) {
+    //let resultado='';
+    //let letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     
-    desplazamiento = (desplazamiento % 26 + 26) % 26; 
+    //desplazamiento = (desplazamiento % 26 + 26) % 26; 
     
-    if (texto){
-        for (let i=0; i<texto.length; ++i){
+    //if (texto){
+        //for (let i=0; i<texto.length; ++i){
             
-            if (letras.indexOf(texto[i])!=-1)
-            { 
+            //if (letras.indexOf(texto[i])!=-1)
+            //{ 
                
-                let posicion=((letras.indexOf(texto[i])+desplazamiento) % 26);
-                resultado+=letras[posicion];
-            }
-            else
-                resultado+=texto[i]; 
-        }
-    }
-    return resultado;
-    }
+                //let posicion=((letras.indexOf(texto[i])+desplazamiento) % 26);
+                //resultado+=letras[posicion];
+           // }
+            //else
+                //resultado+=texto[i]; 
+       // }
+    //}
+    //return resultado;
+    //}
     
+   
+
    

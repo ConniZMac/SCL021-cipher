@@ -1,8 +1,19 @@
 body{
   background: url("https://www.xtrafondos.com/wallpapers/resized/figuras-geometricas-de-colores-abstractas-5859.jpg?s=large"); 
+  background-size: 110%;
+  animation: movimiento 30s infinite linear alternate;
   position:relative;
   bottom:50px;
 
+
+}
+@keyframes movimiento{
+  from{
+    background-position: bottom left;
+  }
+  to{
+    background-position: top right;
+  }
 }
 fieldset{
   background:linear-gradient(to bottom, #ebb153  5%, #80b5ea 100%);
@@ -62,6 +73,7 @@ fieldset{
   font-family: sans-serif;
   font-size:15px;
   padding:12px 20px;
+  
 
 
 }
@@ -116,7 +128,7 @@ textarea{
   transform:translate(580px,100px);
   font-family: 'Lucida Sans'; 
   position:relative;
-  right:80px
+  right:70px
 }
 
 #container-1, #container-2{
@@ -137,7 +149,3 @@ textarea{
 .invisible{
   display:none
 }
-
-  
-  
-  
